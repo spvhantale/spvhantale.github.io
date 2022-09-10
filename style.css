@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu',sans-serif;
+}
+.max-wdith{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/* Navbar Styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 25px 20px;
+    /* background: crimson; */
+}
+.navbar.sticky{
+    padding: 15px 20px;
+    background-color: #526BCF;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a:hover span{
+    color: crimson;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+color: white;
+font-size: 18px;
+font-weight: 500;
+margin-left: 25px;
+transition:color 0.3s ease;
+display: inline-block;
+position: relative;
+}
+.navbar .menu li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color:crimson;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.navbar .menu li a:hover::after{
+    /* color: crimson; */
+    transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Home Section Styling */
+
+.home{
+    display: flex;
+    background: url("./Resource/homebackground.jpg") no-repeat center;
+    background-size: auto;
+    height: 140vh;
+    color: white;
+    min-height: 500px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+   
+
+}
+/* .home .home-content {
+    margin-top:300px ;
+    margin-left:40px ;
+} */
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-3{
+    font-size: 27px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-2{
+    font-size: 40px;
+    margin: 5px 0px;
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
