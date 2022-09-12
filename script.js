@@ -6,4 +6,11 @@ $(document).ready(function(){
             $('.navbar').removeClass("sticky");
         }
     });
+
+    // toggle menu/navbar scrpit
+    
+    $('.menu-btn').click(function(){
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+    })
 });
