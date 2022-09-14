@@ -28,6 +28,8 @@
 .navbar.sticky{
     padding: 15px 20px;
     background-color: #526BCF;
+    /* -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px); */
 }
 .navbar .max-width{
     display: flex;
@@ -50,7 +52,7 @@
 color: white;
 font-size: 18px;
 font-weight: 500;
-margin-left: 25px;
+margin-left: 50px;
 transition:color 0.3s ease;
 display: inline-block;
 position: relative;
@@ -121,7 +123,7 @@ position: relative;
     background:crimson ;
     color: white;
     font-size: 25px;
-    padding: 12 px  36px;
+    padding: 12px  36px;
     margin-top: 20px;
     border-radius:6px ;
     border: 2px solid crimson;
@@ -138,7 +140,7 @@ section{
 .about, .skill{
     font-family: 'Poppins',sans-serif;
 }
-.about .title{
+.about .title,.project .title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -147,12 +149,23 @@ section{
     padding-bottom: 20px;
     font-family: 'Ubuntu',sans-serif;
 }
-.about .title::before{
+.about .title::before,.project .title::before{
     content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
     width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+
+}
+.project .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 300px;
     height: 3px;
     background: #111;
     transform: translateX(-50%);
@@ -170,11 +183,23 @@ section{
     transform: translateX(-50%);
 
 }
+.project .title::after{
+    content: "Here are a few projects.";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+
+}
 .about .about-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 90%;
+    width: 80%;
     justify-content: space-between;
 }
 .about .about-content .left{
@@ -208,7 +233,7 @@ width: 45%;
     background:crimson ;
     color: white;
     font-size: 20px;
-    padding: 12 px  36px;
+    padding: 12px  36px;
     margin-top: 20px;
     border-radius:6px ;
     border: 2px solid crimson;
@@ -278,6 +303,85 @@ width: 45%;
     padding-top: 10px;
     font-size: 20px;
 }
+
+/* project styling*/
+#projects-1,#projects-2{
+    width: 90%;
+    background:gray;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin-bottom: 170px;
+}
+.project-s >.image>img{
+    width: 100%;
+}
+.project-s{
+    padding: 20px;
+    /* width: 90%; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+}
+.project-s>.image>div{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 10px;
+}
+.project-s>.image>h3{
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    text-align: center;
+}
+.project-s>.image>div>.tools-s>div>img{
+    width: 30%;
+}
+.project-s>.image>div>.tools-s>div>p{
+    color: white;
+}
+.project-s>.paragraph{
+    margin-top: -0px;
+    /* border: 1px solid red; */
+}
+.project-s>.paragraph>h1{
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-size: 30px;
+}
+.project-s>.paragraph>p{
+    font-family: 'Ubuntu',sans-serif;
+    /* text-align: center; */
+    font-size: 20px;
+}
+.project-s>.paragraph>div{
+    /* padding-top: 50px; */
+    margin-top: 20px;
+    display: flex;
+}
+.project-s>.paragraph>div>a{
+    border: 1px solid crimson;
+    display: flex;
+    gap: 10px;
+    color: white;
+    /* display: inline-block; */
+    background:crimson ;
+    color: white;
+    font-size: 12px;
+    padding: 12px  36px;
+    margin-top: 20px;
+    border-radius:6px ;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.project-s>.paragraph>div>a:hover{
+    color: crimson;
+    background: none;
+    border-radius: 6px ;
+    border:6 px solid crimson;
+}
 /* media responsive */
 @media (max-width:1300px ){
     .home .max-width{
@@ -306,6 +410,7 @@ width: 45%;
     .menu-btn{
         display: block;
         z-index: 999;
+        margin-left: 600px;
     }
     .menu-btn i.active::before{
         content: "\f00d";
@@ -357,10 +462,33 @@ width: 45%;
 .about .about-content .right{
     flex: 100%;
 }
+.frontend{
+    grid-template-columns: repeat(2,1fr);
+}
+.tools{
+    grid-template-columns: repeat(2,1fr);
+
+}
+.frontend>.frontend-s,.tools>.tools-s{
+    border: 1px solid crimson;
+    padding: 20px 20px;
+    
+}
+.frontend>.frontend-s>div,.tools>.tools-s>div{
+    box-shadow: black 0px 7px 29px 0px;
+    padding: 10px 50px;
+    /* background-color: white; */
+}
+
 }
 @media (max-width:690px ){
     .max-wdith{
         padding: 0 23px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+        margin-left: 500px;
     }
     .home .home-content .text-2{
         font-size: 60px;
@@ -371,13 +499,32 @@ width: 45%;
     .home .home-content a{
         font-size: 20px;
     }
+    .frontend{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .tools{
+        grid-template-columns: repeat(1,1fr);
+    
+    }
 }
-@media (max-width:500px ){
+@media (max-width:550px ){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+        margin-left: 200px;
+    }
  
     .home .home-content .text-2{
         font-size: 50px;
     }
     .home .home-content .text-3{
         font-size: 27px;
+    }
+    .frontend{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .tools{
+        grid-template-columns: repeat(1,1fr);
+    
     }
 }
