@@ -57,6 +57,9 @@ transition:color 0.3s ease;
 display: inline-block;
 position: relative;
 }
+.navbar .menu li a:hover{
+    color: crimson;
+}
 .navbar .menu li a::after{
     content: '';
     position: absolute;
@@ -65,6 +68,7 @@ position: relative;
     height: 3px;
     bottom: 0;
     left: 0;
+    
     background-color:crimson;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
@@ -140,7 +144,7 @@ section{
 .about, .skill{
     font-family: 'Poppins',sans-serif;
 }
-.about .title,.project .title{
+.about .title,.project .title,.contact-s>.title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -382,6 +386,27 @@ width: 45%;
     border-radius: 6px ;
     border:6 px solid crimson;
 }
+/* Contact Details */
+.contact-s{
+    /* padding: 40px; */
+    width: 90%;
+    background: #111;
+    margin: auto;
+}
+.contact-s>.title{
+    padding-top: 20px;
+    color: white;
+    margin-top: -250px;
+    text-align: center;
+}
+.contact-s>p{
+    margin-left: 40px;
+    width: 70%;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    font-size: 25px;
+}
+
 /* media responsive */
 @media (max-width:1300px ){
     .home .max-width{
@@ -479,7 +504,10 @@ width: 45%;
     padding: 10px 50px;
     /* background-color: white; */
 }
+.project-s{
+    grid-template-columns: repeat(1,1fr);
 
+}
 }
 @media (max-width:690px ){
     .max-wdith{
