@@ -89,7 +89,8 @@ position: relative;
 
 .home{
     display: flex;
-    background: url("./Resource/background.jpg") no-repeat center;
+    /* background: url("./Resource/background.jpg") no-repeat center; */
+    background: #111;
     width: 100%;
     background-size: auto;
     height: 140vh;
@@ -309,11 +310,14 @@ width: 45%;
 }
 
 /* project styling*/
+#projects-1{
+    margin-bottom: 170px;
+}
 #projects-1,#projects-2{
     width: 90%;
     background:gray;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    margin-bottom: 170px;
+    /* margin-bottom: 170px; */
 }
 .project-s >.image>img{
     width: 100%;
@@ -389,24 +393,104 @@ width: 45%;
 /* Contact Details */
 .contact-s{
     /* padding: 40px; */
-    width: 90%;
+    width: 100%;
     background: #111;
     margin: auto;
+}
+.contactdetails{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items:top;
+    padding: 50px;
 }
 .contact-s>.title{
     padding-top: 20px;
     color: white;
-    margin-top: -250px;
     text-align: center;
 }
-.contact-s>p{
-    margin-left: 40px;
-    width: 70%;
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    border-radius: 10px;
+    max-width: 600px;
+}
+form>h3{
+    color: black;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+form input,form textarea{
+    border: none;
+    margin: 10px 0px;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+form button{
+    padding: 15px;
+    background: #ff5361;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 35px;
+}
+.links h3{
     color: white;
     font-family: 'Poppins',sans-serif;
-    font-size: 25px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.links a{
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px; */
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
 }
 
+.links a{
+    /* display: inline-block; */
+    text-align: center;
+    background:crimson ;
+    color: white;
+    font-size: 25px;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius:6px ;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.links a:hover{
+    color: white;
+    background: none;
+}
+.footer{
+color: white;
+background: black;
+font-family: 'Poppins',sans-serif;
+font-size: 18px;
+padding: 20px;
+text-align: center;
+}
 /* media responsive */
 @media (max-width:1300px ){
     .home .max-width{
@@ -507,6 +591,15 @@ width: 45%;
 .project-s{
     grid-template-columns: repeat(1,1fr);
 
+}
+.project .title::after{
+    content: "";
+}
+.contactdetails{
+    grid-template-columns: repeat(1,1fr);
+}
+.container{
+    height: 50vh;
 }
 }
 @media (max-width:690px ){

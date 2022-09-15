@@ -19,7 +19,7 @@
             <li><a href="#skill">Skills</a></li>
             <!-- <li><a href="#">Education</a></li> -->
             <li><a href="#project">Project</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="./Resource/Swapnil-Vhantale-Resume.pdf" download="Swapnil-Vhantale-Resume">Resume</a></li>
         </ul>
         <div class="menu-btn">
@@ -235,12 +235,32 @@
     <div class="max-width">
         <div class="contact-s">
             <h2 class="title">Contact</h2>
-            <p>"Hi 👋" in any case feel free to Let me know. I will do my best to respond back. 😊 The quickest way to reach out to me is via an email.</p>
-            <a href="mailto:vhantale510@gmail.com" target="_blank">Mail Me</a>
+            <div class="contactdetails">
+                <div class="links">
+                    <h3>"Hi 👋" in any case feel free to Let me know. I will do my best to respond back. 😊The quickest way to reach out to me is via an email.</h3>
+                    <a href="mailto:vhantale510@gmail.com" target="_blank"> &#x2022; Email</a>
+                    <a href="https://github.com/spvhantale" target="_blank">&#x2022; GitHub</a>
+                    <a href="https://www.linkedin.com/in/spvhantale/" target="_blank"> &#x2022;LinkedIn</a>
+                    
+                </div>
+                <div class="container">
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <h3>GET IN TOUCH</h3>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <input type="number" id="phone" placeholder="Your Phone" required>
+                        <textarea  id="massege"rows="4" placeholder="How can we help you"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
         </div>
-       
     </div>
    </section>
+   <div class="footer">
+    <p>© 2022 Designed and Built by Swapnil Vhantale. Contact : +91 9960318010 or Mail at : vhantale510@gmail.com</p>
+   </div>
+   <script src=" https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
 <script src="script.js"></script>
