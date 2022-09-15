@@ -27,3 +27,14 @@ function sendEmail(){
       message => alert(message)
     );
 }
+GitHubCalendar(".calendar", "spvhantale");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "spvhantale", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "spvhantale", {
+       proxy (username) {
+         return fetch(`https://your-proxy.com/github?user=${Swapnil28Y}`)
+       }
+    }).then(r => r.text())
