@@ -205,7 +205,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 80%;
+    width: 90%;
     justify-content: space-between;
 }
 .about .about-content .left{
@@ -231,7 +231,10 @@ width: 45%;
 }
 
 .about .about-content .right p{
+    font-family: 'Poppins',sans-serif;
+    font-size: 22px;
     text-align: justify;
+    margin-bottom: 10px;
 }
 
 .about .about-content .right a{
@@ -354,16 +357,22 @@ width: 45%;
     /* border: 1px solid red; */
 }
 .project-s>.paragraph>h1{
-    color: white;
+    color: crimson;
     margin: auto;
     text-align: center;
     font-family: 'Poppins',sans-serif;
     font-size: 30px;
 }
+
 .project-s>.paragraph>p{
-    font-family: 'Ubuntu',sans-serif;
+    margin: auto;
     /* text-align: center; */
-    font-size: 20px;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    /* text-align: center; */
+    font-size: 18px;
+
+    margin: 15px;
 }
 .project-s>.paragraph>div{
     /* padding-top: 50px; */
@@ -924,6 +933,12 @@ text-align: center;
     #datawork{
         grid-template-columns: repeat(2,1fr);
     }
+    .project-s>.paragraph>div>a{
+        gap: 20px;
+    
+        padding: 7px  16px; 
+        
+    }
     }
 @media (max-width:550px ){
     .menu-btn{
@@ -951,5 +966,10 @@ text-align: center;
     }
     #datawork{
         grid-template-columns: repeat(1,1fr);
+    }
+   
+    .project-s>.paragraph>div>a{
+        gap: 3px;
+        padding: 10px  16px; 
     }
 }
