@@ -14,19 +14,22 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     })
 });
-function sendEmail(){
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "vhantale510@gmail.com",
-        Password : "22A2F9BBD0E11F20BEB785C37FBBA0744B92",
-        To : 'vhantale510@gmail.com',
-        From : document.getElementById("email").value,
-        Subject : "New Contact Form Enquiry",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
-}
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyvVBWH9iC1W-tXwLDu7JhdNwnC2N1wQQanlCysdjmiFlZT8P7ypmAnFCgYryes6NM/exec'
+  const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg");
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent successfully";
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
 GitHubCalendar(".calendar", "spvhantale");
 
     // or enable responsive functionality:
@@ -37,4 +40,4 @@ GitHubCalendar(".calendar", "spvhantale");
        proxy (username) {
          return fetch(`https://your-proxy.com/github?user=${Swapnil28Y}`)
        }
-    }).then(r => r.text())
+    })

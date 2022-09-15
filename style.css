@@ -7,6 +7,9 @@
     text-decoration: none;
     font-family: 'Ubuntu',sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 .max-wdith{
     max-width: 1300px;
     padding: 0 80px;
@@ -89,7 +92,8 @@ position: relative;
 /* Home Section Styling */
 
 .home{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     /* background: url("./Resource/background.jpg") no-repeat center; */
     background: #111;
     width: 100%;
@@ -98,6 +102,10 @@ position: relative;
     color: white;
     min-height: 500px;
     font-family: 'Ubuntu',sans-serif;
+}
+.home>.homeimage>img{
+    border-radius: 50%;
+    width: 100%;
 }
 .home .max-width{
     margin: auto 0 auto 180px;
@@ -653,7 +661,7 @@ form{
     max-width: 600px;
 }
 form>h3{
-    color: black;
+    color:black;
     font-weight: 800;
     margin-bottom: 20px;
 }
@@ -782,23 +790,37 @@ text-align: center;
     font-size: 20px;
     color: white;
 }
+#msg{
+    color: #61b752;
+    text-align: center;
+    margin-left: 700px;
+    margin-top: -70px;
+    display: block;
+}
 /* media responsive */
 @media (max-width:1300px ){
     .home .max-width{
         margin-left: 0px;
     }
-
+    .home-content{
+        padding-left: 70px;
+    }
 }
 @media (max-width:1104px ){
     .about .about-content .left img{
         height: 350px;
         width: 350px;
     }
-
+    .home-content{
+        padding-left: 70px;
+    }
 }
 @media (max-width:991px ){
     .max-wdith{
         padding: 0 50px;
+    }
+    .home-content{
+        padding-left: 70px;
     }
 }
 
@@ -837,7 +859,9 @@ text-align: center;
         margin: 20px 0;
         font-size: 25px;
     }
-    
+    .home-content{
+        padding-left: 70px;
+    }
 .home .home-content .text-2{
     font-size: 70px;
 }
@@ -939,6 +963,9 @@ text-align: center;
         padding: 7px  16px; 
         
     }
+    .home>.homeimage{
+        display: none;
+      }
     }
 @media (max-width:550px ){
     .menu-btn{
@@ -971,5 +998,8 @@ text-align: center;
     .project-s>.paragraph>div>a{
         gap: 3px;
         padding: 10px  16px; 
+    }
+    .home>.homeimage{
+      display: none;
     }
 }

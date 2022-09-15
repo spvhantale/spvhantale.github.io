@@ -39,6 +39,10 @@
             <div class="text-3">And I am a <span>Java Developer</span> </div>
             <a href="#contact">Get in touch</a>
         </div>
+       
+    </div>
+    <div class="homeimage">
+        <img src="./Resource/java develpoer.jpg" alt="">
     </div>
    </section>
    
@@ -304,18 +308,21 @@
                     
                 </div>
                 <div class="container">
-                    <form onsubmit="sendEmail(); reset(); return false;">
+                    <form name="submit-to-google-sheet">
                         <h3>GET IN TOUCH</h3>
-                        <input type="text" id="name" placeholder="Your Name" required>
-                        <input type="email" id="email" placeholder="Your Email" required>
-                        <input type="number" id="phone" placeholder="Your Phone" required>
-                        <textarea  id="massege"rows="4" placeholder="How can we help you"></textarea>
+                        <input type="text" id="name" name="Name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="Email" placeholder="Your Email" required>
+                        <input type="number" id="phone" name="Phone" placeholder="Your Phone" required>
+                        <textarea  id="massege" name="Massege"rows="4" placeholder="How can we help you"></textarea>
                         <button type="submit">Send</button>
                     </form>
                 </div>
             </div>
+            
         </div>
+        
     </div>
+    <span id="msg"></span>
    </section>
    <div class="footer">
     <p>© 2022 Designed and Built by <span style="font-weight: 600; color: crimson;">Swapnil Vhantale.</span>  Contact : +91 9960318010 or Mail at : vhantale510@gmail.com</p>
