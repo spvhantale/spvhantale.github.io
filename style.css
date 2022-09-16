@@ -266,17 +266,17 @@ width: 45%;
 .skill{
     background-color: #111;
 }
-#skills,#tool{
+#skills,#tool,#skills-1{
     margin: auto;
     text-align: center;
    
 }
-#skills>h1,#tool>h1{
+#skills>h1,#tool>h1,#skills-1>h1{
     font-size: 36px;
     padding: 60px;
     color: white;
 }
-#skills>h1>span,#tool>h1>span,.github>h1>span,.statistic>h1>span{
+#skills>h1>span,#tool>h1>span,.github>h1>span,.statistic>h1>span,#skills-1>h1>span{
     color: crimson;
 }
 .frontend{
@@ -287,6 +287,22 @@ width: 45%;
     gap: 40px;
    align-items: center;
     margin: auto;
+}
+.frontend-1{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+    gap: 60px;
+    align-items: center;
+    margin: auto;
+}
+.frontend>.frontend-s>div>img,.tools>.tools-s>div>img{
+    width: 100%;
+}
+.frontend-1>.frontend-s>div>img{
+    width: 100%;
+    height: 150px;
 }
 .tools{
     width: 90%;
@@ -301,7 +317,6 @@ width: 45%;
 .frontend>.frontend-s,.tools>.tools-s{
     border: 1px solid crimson;
     padding: 20px 20px;
-    
 }
 .frontend>.frontend-s>div,.tools>.tools-s>div{
     box-shadow: black 0px 7px 29px 0px;
@@ -309,9 +324,7 @@ width: 45%;
     /* background-color: white; */
 }
 
-.frontend>.frontend-s>div>img,.tools>.tools-s>div>img{
-    width: 100%;
-}
+
 
 .frontend>.frontend-s>div>p,.tools>.tools-s>div>p{
     font-family: 'Poppins',sans-serif;
@@ -966,6 +979,12 @@ text-align: center;
     .home>.homeimage{
         display: none;
       }
+      .container{
+        height: 70vh;
+    }
+    form{
+        width: 100%;
+    }
     }
 @media (max-width:550px ){
     .menu-btn{
@@ -1001,5 +1020,11 @@ text-align: center;
     }
     .home>.homeimage{
       display: none;
+    }
+    .container{
+        height: 70vh;
+    }
+    form{
+        width: 100%;
     }
 }
