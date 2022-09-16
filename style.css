@@ -1027,4 +1027,8 @@ text-align: center;
     form{
         width: 100%;
     }
+    .frontend-1>.frontend-s>div>img{
+        width: 90%;
+        height: 100px;
+    }
 }
