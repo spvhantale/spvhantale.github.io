@@ -10,14 +10,13 @@
    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </head>
 <body>
-   <nav class="navbar">
+   <div class="navbar">
     <div class="max-width">
-        <div class="logo"><a href="#home">S<span>V.</span></a></div>
+        <div class="logo"><a href="#home"><span>Swapnil</span></a></div>
         <ul class="menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About me</a></li>
             <li><a href="#skill">Skills</a></li>
-            <!-- <li><a href="#">Education</a></li> -->
             <li><a href="#project">Project</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="./Resource/Swapnil_Vhantale_Resume.pdf" download="Swapnil_Vhantale_Resume">Resume</a></li>
@@ -28,10 +27,16 @@
             </i>
         </div>
     </div>
-   </nav>
+   </div>
 
-   <!-- Home section Start -->
    <section class="home" id="home">
+    <div class="homeimage">
+        <div style="display: grid; grid-template-columns: repeat(3,1fr); gap: 10px;">
+            <a href="https://github.com/spvhantale" target="_blank"><img src="./Resource/githubgg.gif" alt="" style="width: 70%;"></a>
+            <a href="https://www.linkedin.com/in/spvhantale/" target="_blank"><img src="./Resource/linkedingg.gif" alt="" style="width: 70%;"></a>
+            <a href="mailto:vhantale510@gmail.com" target="_blank"><img src="./Resource/gmailg.gif" alt="" style="width: 70%;"></a>
+        </div>
+    </div>
     <div class="max-width">
         <div class="home-content">
             <div class="text-1">Hello,my name is</div>
@@ -41,12 +46,9 @@
         </div>
        
     </div>
-    <div class="homeimage">
-        <img src="./Resource/java develpoer.jpg" alt="">
-    </div>
+  
    </section>
    
-<!-- about Section starting -->
 <section class="about" id="about">
     <div class="max-width">
         <h2 class="title">About me</h2>
@@ -65,7 +67,6 @@
     </div>
    </section>
 
-<!-- Skills Section starting -->
 <section class="skill" id="skill">
     <div class="max-width">
         <div id="skills">
@@ -159,9 +160,9 @@
     <div class="github" id="githubstat">
         <h1>Github <span>Stats</span></h1>
         <div style="display: grid; gap: 20px;">
-            <img src="https://github-readme-streak-stats.herokuapp.com/?user=spvhantale&theme=dark" />
-            <img src="https://github-readme-stats.vercel.app/api?username=spvhantale&show_icons=true&locale=en&theme=dark"/>
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=spvhantale&theme=radical&langs_count=8" alt="spvhantale"  />
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user=spvhantale&theme=#5687C7" />
+            <img src="https://github-readme-stats.vercel.app/api?username=spvhantale&show_icons=true&locale=en&theme=#5687C7"/>
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=spvhantale&theme=#5687C7&langs_count=8" alt="spvhantale"  />
         
         </div>
        
@@ -220,7 +221,6 @@
         </div>
     </div>
    </section>
-   <!-- Project Section  -->
 
    <section class="project" id="project">
     <div class="max-width">
@@ -361,7 +361,7 @@
     <span id="msg"></span>
    </section>
    <div class="footer">
-    <p>© 2022 Designed and Built by <span style="font-weight: 600; color: crimson;">Swapnil Vhantale.</span>  Contact : +91 9960318010 or Mail at : vhantale510@gmail.com</p>
+    <p>© 2022 Designed and Built by <span style="font-weight: 600; color: #5687C7;">Swapnil Vhantale.</span>  Contact : +91 9960318010 or Mail at : vhantale510@gmail.com</p>
    </div>
    <script src=" https://smtpjs.com/v3/smtp.js"></script>
    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
@@ -377,7 +377,6 @@ $(document).ready(function(){
         }
     });
 
-    // toggle menu/navbar scrpit
     
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
@@ -402,10 +401,7 @@ $(document).ready(function(){
   })
 GitHubCalendar(".calendar", "spvhantale");
 
-    // or enable responsive functionality:
     GitHubCalendar(".calendar", "spvhantale", { responsive: true });
-
-    // Use a proxy
     GitHubCalendar(".calendar", "spvhantale", {
        proxy (username) {
          return fetch(`https://your-proxy.com/github?user=${spvhantale}`)
