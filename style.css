@@ -23,10 +23,11 @@ html{
     transition: all 0.3s ease; 
     border: 3px solid black;
     border-radius: 15px;
+    background-color: black;
 }
 .navbar.sticky{
     padding: 15px 20px;
-    background-color: white;
+    background-color:black;
 }
 .navbar .max-width{
     display: flex;
@@ -34,12 +35,12 @@ html{
     justify-content: space-between;
 }
 .navbar .logo a{
-    color: black;
+    color: white;
     font-size: 35px;
     font-weight: 600;
 }
 .navbar .logo a:hover span{
-    color: black;
+    color: #4078c0;
 }
 .navbar .menu li{
     list-style: none;
@@ -53,7 +54,7 @@ margin: auto;
 text-align: center;
 }
 .navbar .menu li a{
-color: black;
+color:  white;
 font-size: 18px;
 font-weight: 500;
 transition:color 0.3s ease;
@@ -94,7 +95,7 @@ position: relative;
 }
 /* menu btn styling */
 .menu-btn{
-    color: black;
+    color: white;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -187,20 +188,19 @@ section{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 90%;
+    width: 80%;
     justify-content: space-between;
 }
 .about .about-content .left{
-width: 45%;
+width: 50%;
 }
 .about .about-content .left img{
-    height: 400px;
-    width: 400px;
-    /* object-fit: cover; */
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
 }
 .about .about-content .right{
-    width: 55%;
+    width: 50%;
     }
 .about .about-content .right .text{
 
@@ -422,7 +422,8 @@ width: 45%;
     gap: 20px;
     justify-content: space-evenly;
     align-items:top;
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .contact-s>.title{
     padding: 20px;
@@ -435,7 +436,7 @@ width: 45%;
 .github{
     background: white;
 }
-.github>h1{
+.github>h1,#githubstat>h1{
     margin: auto;
     text-align: center;
     padding: 20px;
@@ -847,7 +848,7 @@ text-align: center;
         width: 100%;
         left: -100%;
         top: 0;
-        background: white;
+        background: black;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
@@ -879,7 +880,7 @@ text-align: center;
         /* align-items: left; */
         /* gap: 50px; */
         margin: 20px 0;
-        font-size: 35px;
+        font-size: 25px;
         
     }
     .home-content{
@@ -944,6 +945,7 @@ text-align: center;
     
     display: none;
 } 
+
 #datawork{
     grid-template-columns: repeat(2,1fr);
 }
