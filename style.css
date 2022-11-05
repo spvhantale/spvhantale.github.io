@@ -18,7 +18,7 @@ html{
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 25px 20px;
+    padding: 20px 20px;
     font-family: 'Ubuntu',sans-serif;
     transition: all 0.3s ease; 
     border: 3px solid black;
@@ -180,7 +180,8 @@ section{
     background-color: #000;
     color: white;
     margin: 40px;
-    border-radius: 50%;
+    border-radius: 70px;
+    font-size: 40px;
 }
 
 
@@ -251,7 +252,9 @@ width: 50%;
     color: white;
     background-color: #000;
     margin: 40px;
-    border-radius: 50%;
+    border-radius:70px;
+    font-size: 40px;
+
 }
 .frontend{
     width: 90%;
@@ -307,10 +310,10 @@ width: 50%;
 }
 
 /* project styling*/
-#projects-1{
+#projects-1,#projects-2,#projects-3{
     margin-bottom: 170px;
 }
-#projects-1,#projects-2{
+#projects-1,#projects-2,#projects-3,#projects-4{
     width: 90%;
     background:gray;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -338,7 +341,9 @@ width: 50%;
     color: white;
     background-color: #000;
     margin: 40px;
-    border-radius: 50%;
+    border-radius: 70px;
+    font-size: 40px;
+
 }
 .project-s>.image>h3{
     color: white;
@@ -407,7 +412,9 @@ width: 50%;
     color: white;
     background-color: #000;
     margin: 40px;
-    border-radius: 50%;
+    border-radius: 70px;
+    font-size: 40px;
+
 }
 /* Contact Details */
 .contact-s{
@@ -431,7 +438,8 @@ width: 50%;
     background-color: #000;
     color: white;
     margin: 40px;
-    border-radius: 50%;
+    border-radius: 70px;
+    font-size: 40px;
 }
 .github{
     background: white;
@@ -444,7 +452,7 @@ width: 50%;
     color: white;
     background-color: #000;
     margin: 40px;
-    border-radius: 50%;
+    border-radius: 70px;
 }
 .github .calendar{
     /* display: flex; */
@@ -735,7 +743,7 @@ text-align: center;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
     -6px -6px 10px -1px rgba(0, 0, 0, 0.15);
     padding: 10px;
-    background: #521798;
+    background: #1D75AB;
 
 }
 .inner{
@@ -770,8 +778,10 @@ text-align: center;
     color: white;
     background-color: #000;
     margin: 40px;
-    border-radius: 50%;
+    border-radius: 70px;
     text-align: center;
+    font-size: 40px;
+
 }
 #datawork{
     width: 90%;
@@ -837,7 +847,7 @@ text-align: center;
     .menu-btn{
         display: block;
         z-index: 999;
-        margin-left: 600px;
+        margin-left: 500px;
     }
     .menu-btn i.active::before{
         content: "\f00d";
@@ -1002,7 +1012,7 @@ text-align: center;
     .menu-btn{
         display: block;
         z-index: 999;
-        margin-left: 200px;
+        margin-left: 150px;
     }
  
     .home .home-content .text-2{
