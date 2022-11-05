@@ -53,14 +53,23 @@ html{
 margin: auto;
 text-align: center;
 }
-.navbar .menu li a{
+.navbar .menu li a,.navbar .menu li a p button{
 color:  white;
 font-size: 18px;
 font-weight: 500;
 transition:color 0.3s ease;
 display: inline-block;
 position: relative;
+background-color: #000;
 }
+/* .navbar .menu li a>button{
+    border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+} */
 .navbar .menu li a:hover{
     color: #4078c0;
 }
@@ -882,7 +891,7 @@ text-align: center;
         width: 100%;
         margin-left: 0px;
     }
-    .navbar .menu li a{
+    .navbar .menu li a,.navbar .menu li a p button{
         display: inline-block;
         display: flex;
         flex-direction: column;
@@ -892,6 +901,10 @@ text-align: center;
         margin: 20px 0;
         font-size: 25px;
         
+    }
+    .navbar .menu li a p button{
+        margin-top:-5px;
+        border: none;
     }
     .home-content{
         padding-left: 70px;
