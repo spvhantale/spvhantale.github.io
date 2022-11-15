@@ -308,11 +308,13 @@ width: 50%;
     box-shadow: black 0px 7px 29px 0px;
     padding: 10px 50px;
     background-color: #5687C7;
+    border-radius: 12px;
 }
 
 .frontend>.frontend-s>div>p,.tools>.tools-s>div>p{
     font-family: 'Poppins',sans-serif;
     background: #5687C7;
+    
     color: white;
     padding-top: 10px;
     font-size: 20px;
@@ -472,200 +474,7 @@ width: 50%;
     /* border: 1px solid red; */
 
 }
-:root {
-    --color-calendar-graph-day-bg: #dddbdb;
-    --color-calendar-graph-day-L1-bg: #EC9706;
-    --color-calendar-graph-day-L2-bg: #ED7117;
-    --color-calendar-graph-day-L3-bg:#B25b0D ;
-    --color-calendar-graph-day-L4-bg: #8D4004	;
-  }
-  
-  rect.ContributionCalendar-day[data-level='0'] {
-      fill: var(--color-calendar-graph-day-bg);
-  }
-  
-  rect.ContributionCalendar-day[data-level='1'] {
-      fill: var(--color-calendar-graph-day-L1-bg);
-  }
-  
-  rect.ContributionCalendar-day[data-level='2'] {
-      fill: var(--color-calendar-graph-day-L2-bg);
-  }
-  
-  rect.ContributionCalendar-day[data-level='3'] {
-      fill: var(--color-calendar-graph-day-L3-bg);
-  }
-  
-  rect.ContributionCalendar-day[data-level='4'] {
-      fill: var(--color-calendar-graph-day-L4-bg);
-  }
-  
-  .calendar .width-full > .float-left {
-      display: none;
-  }
-  
-  .calendar {
-      font-family: 'Poppins',sans-serif;
-      /* border: 1px solid #DDDDDD; */
-      border-radius: 3px;
-      min-height: 243px;
-      text-align: center;
-      margin: 0 auto;
-      width: 85%;
-  }
- 
-  .calendar-graph text.wday,
-  .calendar-graph text.month {
-      font-size: 10px;
-      fill: #aaa;
-  }
-  
-  .contrib-legend {
-      text-align: right;
-      padding: 0 14px 10px 0;
-      display: inline-block;
-      /* float: right; */
-  }
-  
-  .contrib-legend .legend {
-      display: inline-block;
-      list-style: none;
-      margin: 0 5px;
-      position: relative;
-      bottom: -1px;
-      padding: 0;
-  }
-  
-  .contrib-legend .legend li {
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-  }
-  
-  .text-small {
-      font-size: 12px;
-      color: #767676;
-  }
-  
-  .calendar-graph {
-      padding: 5px 0 0;
-      text-align: center;
-  }
-  
-  .contrib-column {
-      padding: 15px 0;
-      text-align: center;
 
-      font-size: 18px;
-  }
-  .contrib-column-first {
-      border-left: 0;
-  }
-  
-  .table-column {
-      display: table-cell;
-      width: 1%;
-      padding-right: 10px;
-      padding-left: 10px;
-      vertical-align: top;
-  }
- 
-  .contrib-number {
-      font-weight: 300;
-      line-height: 1.3em;
-      font-size: 20px;
-      display: block;
-      color:#8D4004;
-  }
-  
-  .calendar img.spinner {
-      width: 70px;
-      margin-top: 50px;
-      min-height: 70px;
-  }
-  
-  .monospace {
-      text-align: center;
-      color: #000;
-      font-family: monospace;
-  }
-  
-  .monospace a {
-      color: #1D75AB;
-      text-decoration: none;
-  }
-  
-  .contrib-footer {
-      font-size: 11px;
-      padding: 0 10px 12px;
-      text-align: left;
-      width: 100%;
-      box-sizing: border-box;
-      height: 26px;
-  }
-  
-  .left.text-muted {
-      float: left;
-      margin-left: 9px;
-      color: #767676;
-  }
-  .left.text-muted a {
-      color: #4078c0;
-      text-decoration: none;
-  }
-  .left.text-muted a:hover,
-  .monospace a:hover {
-      text-decoration: underline;
-  }
-  
-  h2.f4.text-normal.mb-3 {
-      display: none;
-  }
-  
-  .float-left.text-gray {
-      float: left;
-  }
-  #user-activity-overview{
-      display:none;
-  }
-  
-  .day-tooltip {
-      white-space: nowrap;
-      position: absolute;
-      z-index: 99999;
-      padding: 10px;
-      font-size: 12px;
-      color: #959da5;
-      text-align: center;
-      background: rgba(0,0,0,.85);
-      border-radius: 3px;
-      display: none;
-      pointer-events: none;
-  }
-  .day-tooltip strong {
-      color: #dfe2e5;
-  }
-  .day-tooltip.is-visible {
-      display: block;
-  }
-  .day-tooltip:after {
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
-      width: 5px;
-      height: 5px;
-      box-sizing: border-box;
-      margin: 0 0 0 -5px;
-      content: " ";
-      border: 5px solid transparent;
-      border-top-color: rgba(0,0,0,.85)
-  }
-  
-  text.ContributionCalendar-label {
-      fill: #ccc;
-      font-size: 11px;
-  }
- 
 .container{
     width: 100%;
     height: 100vh;
@@ -829,6 +638,12 @@ text-align: center;
     .home-content{
         padding-left: 70px;
     }
+    #githubstat1{
+        width: 70%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
 }
 @media (max-width:1104px ){
     .about .about-content .left img{
@@ -838,6 +653,12 @@ text-align: center;
     .home-content{
         padding-left: 70px;
     }
+    #githubstat1{
+        width: 70%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
 }
 @media (max-width:991px ){
     .max-wdith{
@@ -846,9 +667,10 @@ text-align: center;
     .home-content{
         padding-left: 70px;
     }
+    
 }
 
-@media (max-width:947px ) {
+@media (max-width:1050px ) {
    
     .max-wdith{
         padding: 0 50px;
@@ -899,9 +721,14 @@ text-align: center;
         /* align-items: left; */
         /* gap: 50px; */
         margin: 20px 0;
-        font-size: 25px;
-        
+        font-size: 25px; 
     }
+    /* #githubstat1{
+        width: 70%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    } */
     .navbar .menu li a p button{
         margin-top:-5px;
         border: none;
@@ -964,10 +791,6 @@ text-align: center;
     height: 50vh;
 }
 
- .github {
-    
-    display: none;
-} 
 
 #datawork{
     grid-template-columns: repeat(2,1fr);
@@ -980,7 +803,7 @@ text-align: center;
     .menu-btn{
         display: block;
         z-index: 999;
-        margin-left: 500px;
+        margin-left: 300px;
     }
     .home .home-content .text-2{
         font-size: 60px;
@@ -998,10 +821,7 @@ text-align: center;
         grid-template-columns: repeat(1,1fr);
     
     }
-    .github {
-        /* width: 70%; */
-        display: none;
-    }
+   
     #datawork{
         grid-template-columns: repeat(2,1fr);
     }
@@ -1041,9 +861,14 @@ text-align: center;
         grid-template-columns: repeat(1,1fr);
     
     }
-    .github {
-        /* width: 70%; */
-        display: none;
+    #github{
+        width: 100%;
+    }
+    #githubstat1>img {
+        width: 70%;
+        display: block;
+        align-items: center;
+        justify-content: center;
     }
     #datawork{
         grid-template-columns: repeat(1,1fr);

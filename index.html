@@ -9,6 +9,10 @@
    <link rel="stylesheet" href="./style.css">
    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+   <link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
 </head>
 <body>
    <div class="navbar">
@@ -492,6 +496,9 @@
 </body>
 </html>
 <script >
+    document.querySelector("#resumedrive").addEventListener("click",function(){
+        window.open("https://drive.google.com/file/d/16-4Fzntyt_eoZGXmtG1ny_xW1AKrTDhs/view?usp=share_link")
+    })
 $(document).ready(function(){
     $(window).scroll(function(){
         if(this.scrollY>20){
@@ -523,15 +530,8 @@ $(document).ready(function(){
       })
       .catch(error => console.error('Error!', error.message))
   })
-GitHubCalendar(".calendar", "spvhantale");
 
     GitHubCalendar(".calendar", "spvhantale", { responsive: true });
-    GitHubCalendar(".calendar", "spvhantale", {
-       proxy (username) {
-         return fetch(`https://your-proxy.com/github?user=${spvhantale}`)
-       }
-    })
-    document.querySelector("#resumedrive").addEventListener("click",function(){
-        window.open("https://drive.google.com/file/d/16-4Fzntyt_eoZGXmtG1ny_xW1AKrTDhs/view?usp=share_link")
-    })
+ 
+    
 </script>
