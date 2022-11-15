@@ -436,12 +436,15 @@ width: 50%;
 }
 .contactdetails{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
     gap: 20px;
     justify-content: space-evenly;
     align-items:top;
     padding-left: 50px;
     padding-right: 50px;
+}
+.contactdetails a{
+    width: 20%;
 }
 .contact-s>.title{
     padding: 20px;
