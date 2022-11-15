@@ -444,7 +444,7 @@ width: 50%;
     padding-right: 50px;
 }
 .contactdetails a{
-    width: 20%;
+    width: 50%;
 }
 .contact-s>.title{
     padding: 20px;
@@ -798,6 +798,9 @@ text-align: center;
 #datawork{
     grid-template-columns: repeat(2,1fr);
 }
+.contactdetails a{
+    width: 50%;
+}
 }
 @media (max-width:690px ){
     .max-wdith{
@@ -843,12 +846,15 @@ text-align: center;
     form{
         width: 100%;
     }
+    .contactdetails a{
+        width: 50%;
+    }
     }
 @media (max-width:550px ){
     .menu-btn{
         display: block;
         z-index: 999;
-        margin-left: 150px;
+        margin-left: 120px;
     }
  
     .home .home-content .text-2{
@@ -893,5 +899,8 @@ text-align: center;
     .frontend-1>.frontend-s>div>img{
         width: 90%;
         height: 100px;
+    }
+    .contactdetails a{
+        width: 50%;
     }
 }
