@@ -321,10 +321,10 @@ width: 50%;
 }
 
 /* project styling*/
-#projects-1,#projects-2,#projects-3{
+#projects-1,#projects-2,#projects-3,#projects-4{
     margin-bottom: 170px;
 }
-#projects-1,#projects-2,#projects-3,#projects-4{
+#projects-1,#projects-2,#projects-3,#projects-4,#projects-5{
     width: 90%;
     background:gray;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -799,7 +799,7 @@ text-align: center;
     grid-template-columns: repeat(2,1fr);
 }
 .contactdetails a{
-    width: 50%;
+    width: 60%;
 }
 }
 @media (max-width:690px ){
@@ -847,7 +847,7 @@ text-align: center;
         width: 100%;
     }
     .contactdetails a{
-        width: 50%;
+        width: 70%;
     }
     }
 @media (max-width:550px ){
@@ -901,6 +901,6 @@ text-align: center;
         height: 100px;
     }
     .contactdetails a{
-        width: 50%;
+        width: 90%;
     }
 }
